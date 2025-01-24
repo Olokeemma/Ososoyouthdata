@@ -29,7 +29,7 @@ body {
   }
   
   .king-image {
-    width: 150px; /* Adjust the size of the king's image */
+    width: 150px;
     height: auto;
     border-radius: 50%;
   }
@@ -47,6 +47,8 @@ body {
   p {
     font-size: 1rem;
     color: #333;
+    line-height: 1.8;  /* Increase line height for better readability */
+    margin: 20px 0;
   }
   
   h2 {
@@ -95,7 +97,7 @@ body {
     }
   
     .king-image {
-      width: 120px; /* Smaller image size for mobile */
+      width: 120px;
     }
   
     h1 {
@@ -103,7 +105,11 @@ body {
     }
   
     p {
-      font-size: 0.9rem;
+      font-size: 0.9rem;  /* Make text slightly smaller on mobile */
+      line-height: 1.6;   /* Adjust line height for mobile */
+      margin: 10px 0;     /* Add smaller margin on mobile */
+      padding-left: 10px;
+      padding-right: 10px;
     }
   
     form {
@@ -141,6 +147,7 @@ body {
   
     p {
       font-size: 1rem;
+      line-height: 1.7;
     }
   
     form {
