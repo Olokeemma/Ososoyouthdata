@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,7 +7,7 @@ body {
   }
   
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -18,25 +19,24 @@ body {
     text-align: center;
     margin-bottom: 20px;
   }
-  .registrationForm{
-    text-align: center;
-  }
+  
   .header-content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-direction: row;
+    flex-direction: column;
   }
   
   .king-image {
-    width: 200px; /* Adjust the size of the king's image */
+    width: 150px; /* Adjust the size of the king's image */
     height: auto;
     border-radius: 50%;
   }
   
   .welcome-text {
     max-width: 600px;
+    text-align: center;
   }
   
   h1 {
@@ -83,5 +83,96 @@ body {
   
   button:hover {
     background-color: #45a049;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Small Devices (Mobile Phones) */
+  @media (max-width: 600px) {
+    .header-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .king-image {
+      width: 120px; /* Smaller image size for mobile */
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    form {
+      width: 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  /* Tablets and smaller desktops (up to 1024px wide) */
+  @media (max-width: 1024px) {
+    .container {
+      width: 80%;
+    }
+  
+    .header-content {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .king-image {
+      width: 140px;
+    }
+  
+    .welcome-text {
+      max-width: 500px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    form {
+      width: 100%;
+    }
+  }
+  
+  /* Large Devices (Desktops, Laptops) */
+  @media (min-width: 1025px) {
+    .container {
+      width: 70%;
+    }
+  
+    .header-content {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  
+    .king-image {
+      width: 150px;
+    }
+  
+    .welcome-text {
+      max-width: 600px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+    }
   }
   
